@@ -13,7 +13,7 @@
         </tr>
       </thead>
       <tbody>
-        <grid-row-component v-for="item in gridData" :key="item.id" :rowData="item"></grid-row-component>
+        <grid-row-component v-for="item in props.myGrid" :key="item.id" :rowData="item"></grid-row-component>
       </tbody>
     </table>
   </div>
@@ -24,46 +24,9 @@ import { ref, defineProps } from "vue";
 import GridRowComponent from "./GridRowComponent.vue";
 
 const props = defineProps({
-  myGrid: Array,
+  myGrid: Array
 });
-const count = ref(0);
-const gridData = ref([
-  {
-    fileName: "audio1",
-    firstName: "mike",
-    Surname: "peterson",
-    propertyDate: "10-22-1967",
-    propertySelect: "C",
-    propertyDropdown: 2,
-  },
-  {
-    fileName: "audio1",
-    firstName: "mike",
-    Surname: "peterson",
-    propertyDate: "10-22-1967",
-    propertySelect: "A",
-    propertyDropdown: 2,
-  },
-  {
-    fileName: "audio1",
-    firstName: "mike",
-    Surname: "peterson",
-    propertyDate: "10-22-1967",
-    propertySelect: "B",
-    propertyDropdown: 2,
-  },
-]);
 
-function addNewItem() {
-  var myObject = {
-    fileName: this,
-    firstName: "mike",
-    Surname: "peterson",
-    propertyDate: "10-22-1967",
-    propertySelect: "B",
-    propertyDropdown: 2,
-  };
-}
 </script>
 
 <style>
