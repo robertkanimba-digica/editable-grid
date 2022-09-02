@@ -5,7 +5,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from "vue";
+import { ref } from "vue";
 import GridComponent from "./components/GridComponent.vue";
 
 const gridColumn = ref([
@@ -20,29 +20,29 @@ const gridData = ref([
   {
     fileName: "audio1",
     firstName: "mike",
-    Surname: "peterson",
-    propertyDate: "10-22-1967",
+    surName: "peterson",
+    date: new Date(1967, 3, 24),
     propertySelect: "C",
     propertyDropdown: 2,
   },
   {
     fileName: "audio1",
     firstName: "mike",
-    Surname: "peterson",
-    propertyDate: "10-22-1967",
+    surName: "peterson",
+    date: new Date(1967, 3, 24),
     propertySelect: "A",
     propertyDropdown: 2,
   },
   {
     fileName: "audio1",
     firstName: "mike",
-    Surname: "peterson",
-    propertyDate: "10-22-1967",
+    surName: "peterson",
+    date: new Date(1967, 3, 24),
     propertySelect: "B",
     propertyDropdown: 2,
   }
 ]);
-//onMounted(() => console.log(gridData.value))
+
 </script>
 <style>
 </style>

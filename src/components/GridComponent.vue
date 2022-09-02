@@ -7,8 +7,8 @@
           <th>fileName</th>
           <th>FirstName</th>
           <th>Surname</th>
-          <th>propertyDate</th>
-          <th>propertSelect</th>
+          <th>Date</th>
+          <th>propertySelect</th>
           <th>propertDropdown</th>
         </tr>
       </thead>
@@ -20,7 +20,6 @@
 </template>
 
   <script setup>
-import { ref, defineProps } from "vue";
 import GridRowComponent from "./GridRowComponent.vue";
 
 const props = defineProps({
